@@ -6,7 +6,8 @@ Moreover, the application dynamically adapts to different devices and screen ori
 
 The calculator's design follows a minimalist style, employing sleek colors. A dark background with contrasting light buttons creates a striking and modern look that is visually appealing to users.
 
-What's Done in the Code:
+
+**What's Done in the Code:**
 
 The user interface is crafted entirely using Swift code, ensuring a seamless and customizable experience.
 
@@ -16,7 +17,8 @@ Input is intelligently restricted, ensuring precision and accuracy during calcul
 
 Dynamic font resizing adjusts the font size based on input length, ensuring readability and elegance.
 
-Screenshots:
+**Screenshots:**
+
 <div style="display: flex;">
     <img src="https://github.com/kulikmark/KulikSimpleCalculator/blob/main/Screenshot.png" alt="Image 1" style="width: 50%;">
     <img src="https://github.com/kulikmark/KulikSimpleCalculator/blob/main/Screenshot_2.jpg" alt="Image 1" style="width: 50%;">
