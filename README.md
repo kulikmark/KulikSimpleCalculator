@@ -8,9 +8,13 @@ Input is intelligently restricted, ensuring precision and accuracy during calcul
 Dynamic font resizing adjusts the font size based on input length, ensuring readability and elegance.
 
 Screenshots:
-<div style="display: flex; justify-content: center; flex-direction: row;">
-    <img src="https://github.com/kulikmark/KulikSimpleCalculator/blob/main/KulikSimpleCalculator_1.png" alt="Image 1" style="width: 50%; height: auto;">
-    <img src="https://github.com/kulikmark/KulikSimpleCalculator/blob/main/KulikSimpleCalculator_2.png" alt="Image 2" style="width: 50%; height: auto;">
-</div>
+<table>
+  <tr>
+    <td><img src="https://github.com/kulikmark/KulikSimpleCalculator/blob/main/KulikSimpleCalculator_1.png" alt="Image 1" style="width: 50%; height: auto;"></td>
+    <td><img src="https://github.com/kulikmark/KulikSimpleCalculator/blob/main/KulikSimpleCalculator_2.png" alt="Image 2" style="width: 50%; height: auto;"></td>
+  </tr>
+</table>
+
+
 
 
