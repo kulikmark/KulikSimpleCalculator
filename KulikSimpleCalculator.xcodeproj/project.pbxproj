@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D9DE1412BB41F030009CC20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9DE1402BB41F030009CC20 /* AppDelegate.swift */; };
+		6D9DE1432BB41F030009CC20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9DE1422BB41F030009CC20 /* SceneDelegate.swift */; };
+		6D9DE1452BB41F030009CC20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9DE1442BB41F030009CC20 /* ViewController.swift */; };
+		6D9DE1482BB41F030009CC20 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6D9DE1472BB41F030009CC20 /* Base */; };
+		6D9DE14A2BB41F060009CC20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D9DE1492BB41F060009CC20 /* Assets.xcassets */; };
+		6D9DE14D2BB41F060009CC20 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6D9DE14C2BB41F060009CC20 /* Base */; };
+		6D9DE1582BB41F060009CC20 /* KulikSimpleCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9DE1572BB41F060009CC20 /* KulikSimpleCalculatorTests.swift */; };
+		6D9DE1622BB41F060009CC20 /* KulikSimpleCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9DE1612BB41F060009CC20 /* KulikSimpleCalculatorUITests.swift */; };
+		6D9DE1642BB41F060009CC20 /* KulikSimpleCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9DE1632BB41F060009CC20 /* KulikSimpleCalculatorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D9DE1542BB41F060009CC20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D9DE1352BB41F030009CC20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D9DE13C2BB41F030009CC20;
+			remoteInfo = KulikSimpleCalculator;
+		};
+		6D9DE15E2BB41F060009CC20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D9DE1352BB41F030009CC20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D9DE13C2BB41F030009CC20;
+			remoteInfo = KulikSimpleCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D9DE13D2BB41F030009CC20 /* KulikSimpleCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KulikSimpleCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D9DE1402BB41F030009CC20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D9DE1422BB41F030009CC20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6D9DE1442BB41F030009CC20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D9DE1472BB41F030009CC20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D9DE1492BB41F060009CC20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D9DE14C2BB41F060009CC20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D9DE14E2BB41F060009CC20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D9DE1532BB41F060009CC20 /* KulikSimpleCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KulikSimpleCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D9DE1572BB41F060009CC20 /* KulikSimpleCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KulikSimpleCalculatorTests.swift; sourceTree = "<group>"; };
+		6D9DE15D2BB41F060009CC20 /* KulikSimpleCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KulikSimpleCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D9DE1612BB41F060009CC20 /* KulikSimpleCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KulikSimpleCalculatorUITests.swift; sourceTree = "<group>"; };
+		6D9DE1632BB41F060009CC20 /* KulikSimpleCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KulikSimpleCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D9DE13A2BB41F030009CC20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D9DE1502BB41F060009CC20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D9DE15A2BB41F060009CC20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D9DE1342BB41F030009CC20 = {
+			isa = PBXGroup;
+			children = (
+				6D9DE13F2BB41F030009CC20 /* KulikSimpleCalculator */,
+				6D9DE1562BB41F060009CC20 /* KulikSimpleCalculatorTests */,
+				6D9DE1602BB41F060009CC20 /* KulikSimpleCalculatorUITests */,
+				6D9DE13E2BB41F030009CC20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D9DE13E2BB41F030009CC20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D9DE13D2BB41F030009CC20 /* KulikSimpleCalculator.app */,
+				6D9DE1532BB41F060009CC20 /* KulikSimpleCalculatorTests.xctest */,
+				6D9DE15D2BB41F060009CC20 /* KulikSimpleCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D9DE13F2BB41F030009CC20 /* KulikSimpleCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				6D9DE1402BB41F030009CC20 /* AppDelegate.swift */,
+				6D9DE1422BB41F030009CC20 /* SceneDelegate.swift */,
+				6D9DE1442BB41F030009CC20 /* ViewController.swift */,
+				6D9DE1462BB41F030009CC20 /* Main.storyboard */,
+				6D9DE1492BB41F060009CC20 /* Assets.xcassets */,
+				6D9DE14B2BB41F060009CC20 /* LaunchScreen.storyboard */,
+				6D9DE14E2BB41F060009CC20 /* Info.plist */,
+			);
+			path = KulikSimpleCalculator;
+			sourceTree = "<group>";
+		};
+		6D9DE1562BB41F060009CC20 /* KulikSimpleCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D9DE1572BB41F060009CC20 /* KulikSimpleCalculatorTests.swift */,
+			);
+			path = KulikSimpleCalculatorTests;
+			sourceTree = "<group>";
+		};
+		6D9DE1602BB41F060009CC20 /* KulikSimpleCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D9DE1612BB41F060009CC20 /* KulikSimpleCalculatorUITests.swift */,
+				6D9DE1632BB41F060009CC20 /* KulikSimpleCalculatorUITestsLaunchTests.swift */,
+			);
+			path = KulikSimpleCalculatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D9DE13C2BB41F030009CC20 /* KulikSimpleCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D9DE1672BB41F060009CC20 /* Build configuration list for PBXNativeTarget "KulikSimpleCalculator" */;
+			buildPhases = (
+				6D9DE1392BB41F030009CC20 /* Sources */,
+				6D9DE13A2BB41F030009CC20 /* Frameworks */,
+				6D9DE13B2BB41F030009CC20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KulikSimpleCalculator;
+			productName = KulikSimpleCalculator;
+			productReference = 6D9DE13D2BB41F030009CC20 /* KulikSimpleCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D9DE1522BB41F060009CC20 /* KulikSimpleCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D9DE16A2BB41F060009CC20 /* Build configuration list for PBXNativeTarget "KulikSimpleCalculatorTests" */;
+			buildPhases = (
+				6D9DE14F2BB41F060009CC20 /* Sources */,
+				6D9DE1502BB41F060009CC20 /* Frameworks */,
+				6D9DE1512BB41F060009CC20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D9DE1552BB41F060009CC20 /* PBXTargetDependency */,
+			);
+			name = KulikSimpleCalculatorTests;
+			productName = KulikSimpleCalculatorTests;
+			productReference = 6D9DE1532BB41F060009CC20 /* KulikSimpleCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D9DE15C2BB41F060009CC20 /* KulikSimpleCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D9DE16D2BB41F060009CC20 /* Build configuration list for PBXNativeTarget "KulikSimpleCalculatorUITests" */;
+			buildPhases = (
+				6D9DE1592BB41F060009CC20 /* Sources */,
+				6D9DE15A2BB41F060009CC20 /* Frameworks */,
+				6D9DE15B2BB41F060009CC20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D9DE15F2BB41F060009CC20 /* PBXTargetDependency */,
+			);
+			name = KulikSimpleCalculatorUITests;
+			productName = KulikSimpleCalculatorUITests;
+			productReference = 6D9DE15D2BB41F060009CC20 /* KulikSimpleCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D9DE1352BB41F030009CC20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					6D9DE13C2BB41F030009CC20 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					6D9DE1522BB41F060009CC20 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 6D9DE13C2BB41F030009CC20;
+					};
+					6D9DE15C2BB41F060009CC20 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 6D9DE13C2BB41F030009CC20;
+					};
+				};
+			};
+			buildConfigurationList = 6D9DE1382BB41F030009CC20 /* Build configuration list for PBXProject "KulikSimpleCalculator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D9DE1342BB41F030009CC20;
+			productRefGroup = 6D9DE13E2BB41F030009CC20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D9DE13C2BB41F030009CC20 /* KulikSimpleCalculator */,
+				6D9DE1522BB41F060009CC20 /* KulikSimpleCalculatorTests */,
+				6D9DE15C2BB41F060009CC20 /* KulikSimpleCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D9DE13B2BB41F030009CC20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D9DE14A2BB41F060009CC20 /* Assets.xcassets in Resources */,
+				6D9DE14D2BB41F060009CC20 /* Base in Resources */,
+				6D9DE1482BB41F030009CC20 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D9DE1512BB41F060009CC20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D9DE15B2BB41F060009CC20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D9DE1392BB41F030009CC20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D9DE1452BB41F030009CC20 /* ViewController.swift in Sources */,
+				6D9DE1412BB41F030009CC20 /* AppDelegate.swift in Sources */,
+				6D9DE1432BB41F030009CC20 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D9DE14F2BB41F060009CC20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D9DE1582BB41F060009CC20 /* KulikSimpleCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D9DE1592BB41F060009CC20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D9DE1622BB41F060009CC20 /* KulikSimpleCalculatorUITests.swift in Sources */,
+				6D9DE1642BB41F060009CC20 /* KulikSimpleCalculatorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D9DE1552BB41F060009CC20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D9DE13C2BB41F030009CC20 /* KulikSimpleCalculator */;
+			targetProxy = 6D9DE1542BB41F060009CC20 /* PBXContainerItemProxy */;
+		};
+		6D9DE15F2BB41F060009CC20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D9DE13C2BB41F030009CC20 /* KulikSimpleCalculator */;
+			targetProxy = 6D9DE15E2BB41F060009CC20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6D9DE1462BB41F030009CC20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D9DE1472BB41F030009CC20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D9DE14B2BB41F060009CC20 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D9DE14C2BB41F060009CC20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D9DE1652BB41F060009CC20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D9DE1662BB41F060009CC20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D9DE1682BB41F060009CC20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJ4TAD8N5W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KulikSimpleCalculator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markkulik.KulikSimpleCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D9DE1692BB41F060009CC20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJ4TAD8N5W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KulikSimpleCalculator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markkulik.KulikSimpleCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6D9DE16B2BB41F060009CC20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJ4TAD8N5W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markkulik.KulikSimpleCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KulikSimpleCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KulikSimpleCalculator";
+			};
+			name = Debug;
+		};
+		6D9DE16C2BB41F060009CC20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJ4TAD8N5W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markkulik.KulikSimpleCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KulikSimpleCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KulikSimpleCalculator";
+			};
+			name = Release;
+		};
+		6D9DE16E2BB41F060009CC20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJ4TAD8N5W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markkulik.KulikSimpleCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KulikSimpleCalculator;
+			};
+			name = Debug;
+		};
+		6D9DE16F2BB41F060009CC20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJ4TAD8N5W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markkulik.KulikSimpleCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KulikSimpleCalculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D9DE1382BB41F030009CC20 /* Build configuration list for PBXProject "KulikSimpleCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D9DE1652BB41F060009CC20 /* Debug */,
+				6D9DE1662BB41F060009CC20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D9DE1672BB41F060009CC20 /* Build configuration list for PBXNativeTarget "KulikSimpleCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D9DE1682BB41F060009CC20 /* Debug */,
+				6D9DE1692BB41F060009CC20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D9DE16A2BB41F060009CC20 /* Build configuration list for PBXNativeTarget "KulikSimpleCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D9DE16B2BB41F060009CC20 /* Debug */,
+				6D9DE16C2BB41F060009CC20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D9DE16D2BB41F060009CC20 /* Build configuration list for PBXNativeTarget "KulikSimpleCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D9DE16E2BB41F060009CC20 /* Debug */,
+				6D9DE16F2BB41F060009CC20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D9DE1352BB41F030009CC20 /* Project object */;
+}
