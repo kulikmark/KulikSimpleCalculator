@@ -7,17 +7,18 @@ Moreover, the application dynamically adapts to different devices and screen ori
 The calculator's design follows a minimalist style, employing sleek colors. A dark background with contrasting light buttons creates a striking and modern look that is visually appealing to users.
 
 
-**What's Done in the Code:**
+# What's Done in the Code
 
-The user interface is crafted entirely using Swift code, ensuring a seamless and customizable experience.
 
-Implemented intuitive gesture support for deleting digits, enhancing user convenience and efficiency.
+The application showcases button animations, all meticulously crafted through code without reliance on Storyboard, enhancing user interaction and engagement.
 
-Input is intelligently restricted, ensuring precision and accuracy during calculations.
+Swipe gesture recognition for symbol deletion further improves user experience, offering intuitive input control.
 
-Dynamic font resizing adjusts the font size based on input length, ensuring readability and elegance.
+Seamless adaptation across various devices and screen orientations ensures consistent functionality and aesthetic appeal, providing users with a smooth experience regardless of their device.
 
-**Screenshots:**
+The design, featuring stylish and minimalist elements in beautiful, understated colors, exudes elegance and simplicity, contributing to an aesthetically pleasing user interface.
+
+# Screenshots:
 
 <div style="display: flex;">
     <img src="https://github.com/kulikmark/KulikSimpleCalculator/blob/main/Screenshot.png" alt="Image 1" style="width: 50%;">
