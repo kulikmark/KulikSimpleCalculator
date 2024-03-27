@@ -13,4 +13,6 @@ Dynamic font resizing adjusts the font size based on input length, ensuring read
 Screenshots:
 <div style="display: flex;">
     <img src="https://github.com/kulikmark/KulikSimpleCalculator/blob/main/Screenshot.png" alt="Image 1" style="width: 50%;">
+    <img src=" https://github.com/kulikmark/KulikSimpleCalculator/blob/main/Screenshot_2.jpg" alt="Image 1" style="width: 50%;">
+   
 </div>
