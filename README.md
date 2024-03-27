@@ -9,6 +9,7 @@ Dynamic font resizing adjusts the font size based on input length, ensuring read
 
 Screenshots:
 <div style="display: flex; justify-content: center;">
-    <img src="https://github.com/kulikmark/KulikSimpleCalculator/blob/main/KulikSimpleCalculator_1.png" alt="Image 1" style="width: 45%; margin-right: 10px;">
-    <img src="https://github.com/kulikmark/KulikSimpleCalculator/blob/main/KulikSimpleCalculator_2.png" alt="Image 2" style="width: 45%; margin-left: 10px;">
+    <img src="https://github.com/kulikmark/KulikSimpleCalculator/blob/main/KulikSimpleCalculator_1.png" alt="Image 1" style="width: 50%; height: auto;">
+    <img src="https://github.com/kulikmark/KulikSimpleCalculator/blob/main/KulikSimpleCalculator_2.png" alt="Image 2" style="width: 50%; height: auto;">
 </div>
+
