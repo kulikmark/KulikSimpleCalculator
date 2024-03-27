@@ -31,19 +31,7 @@ class ViewController: UIViewController {
         // Call the method to create buttons
         createButtons()
         
-        displayTextField = UILabel()
-        displayTextField.text = "0"
-        displayTextField.textColor = .white
-        displayTextField.textAlignment = .right
-        displayTextField.font = UIFont.systemFont(ofSize: 90)
-        view.addSubview(displayTextField)
-        displayTextField.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            displayTextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 210),
-            displayTextField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
-            displayTextField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
-            displayTextField.heightAnchor.constraint(equalToConstant: 100)
-        ])
+        
         
         let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(_:)))
         swipeGesture.direction = .left // Направление свайпа (влево)
@@ -83,8 +71,28 @@ class ViewController: UIViewController {
     func adjustFontSize() {
         guard let text = displayTextField.text else { return }
         let maxLength = 6
-        let fontSize: CGFloat = text.count > maxLength ? 35 : 90 // Уменьшаем размер шрифта, если превышено количество символов
+        let fontSize: CGFloat = text.count > maxLength ? 25 : 90 // Уменьшаем размер шрифта, если превышено количество символов
         displayTextField.font = UIFont.systemFont(ofSize: fontSize)
+    }
+    
+    // Добавление анимации нажатия кнопок
+    @objc func buttonTouchDown(_ sender: UIButton) {
+        // Сохраняем исходный цвет кнопки
+        let originalColor = sender.backgroundColor
+        UIView.animate(withDuration: 0.1) {
+            sender.backgroundColor = UIColor.white.withAlphaComponent(0.5) // Устанавливаем подсветку кнопки белым цветом при нажатии
+        }
+        // Восстанавливаем исходный цвет кнопки через небольшую задержку, чтобы подсветка была видна
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            sender.backgroundColor = originalColor
+        }
+    }
+    
+    // Добавление анимации отпускания кнопок
+    @objc func buttonTouchUpInside(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.1) {
+            sender.backgroundColor = sender.backgroundColor?.withAlphaComponent(1.0) // Возвращаем исходную прозрачность фона кнопки при отпускании
+        }
     }
     
     // MARK: - Button Actions
@@ -111,7 +119,7 @@ class ViewController: UIViewController {
     func numberButtonTapped(_ sender: UIButton) {
         guard let digit = sender.currentTitle else { return }
         
-        if let currentText = displayTextField.text, currentText.count < 15 { // Проверяем количество символов
+        if let currentText = displayTextField.text, currentText.count < 23 { // Проверяем количество символов
             if isFirstDigit {
                 displayTextField.text = digit // Заменяем старое значение новым
                 isFirstDigit = false
@@ -133,7 +141,6 @@ class ViewController: UIViewController {
             isFirstDigit = true
         }
     }
-    
     
     func equalsButtonTapped() {
         guard let currentText = displayTextField.text, let number = Double(currentText) else { return }
@@ -173,6 +180,7 @@ class ViewController: UIViewController {
         
         // Сбрасываем состояние для следующей операции
         isFirstDigit = true
+        adjustFontSize()
     }
     
     func clearButtonTapped() {
@@ -209,53 +217,97 @@ class ViewController: UIViewController {
     // MARK: - Method to create buttons
     
     func createButtons() {
+        displayTextField = UILabel()
+        displayTextField.text = "0"
+        displayTextField.textColor = .white
+        displayTextField.textAlignment = .right
+        displayTextField.font = UIFont.systemFont(ofSize: 90)
+        view.addSubview(displayTextField)
+        displayTextField.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            displayTextField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
+            displayTextField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            displayTextField.heightAnchor.constraint(equalToConstant: 70)
+        ])
+        
+        let topConstantPortrait: CGFloat = 150 // Верхний отступ в портретной ориентации
+        let topConstantLandscape: CGFloat = 20 // Верхний отступ в альбомной ориентации
+        
+        let topConstraintPortrait = displayTextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: topConstantPortrait)
+        let topConstraintLandscape = displayTextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: topConstantLandscape)
+        
+        topConstraintPortrait.isActive = true
+        topConstraintLandscape.isActive = false
+        
+        NotificationCenter.default.addObserver(forName: UIDevice.orientationDidChangeNotification, object: nil, queue: nil) { _ in
+            let isPortrait = UIDevice.current.orientation.isPortrait
+            topConstraintPortrait.isActive = isPortrait
+            topConstraintLandscape.isActive = !isPortrait
+        }
+        
         let buttonTitles = [
-            ["C", "0", ".", "="],
+            ["C", "÷"],
             ["1", "2", "3", "+"],
             ["4", "5", "6", "-"],
-            ["7", "8", "9", "×"]
+            ["7", "8", "9", "×"],
+            ["0", ".", "="]
         ]
         
-        let screenWidth = UIScreen.main.bounds.width
-        let screenHeight = UIScreen.main.bounds.height
+        let spacing: CGFloat = 0
         let margin: CGFloat = 0
-        let spacing: CGFloat = 1
-        let buttonWidth = (screenWidth - 2 * margin - 3 * spacing) / 4
-        let buttonHeight: CGFloat = (screenHeight - 2 * margin - 5 * spacing - 300) / 5
-        let bottomMargin: CGFloat = 20 // Устанавливаем желаемый отступ от нижнего края
         
-        var xPosition = margin
-        var yPosition = screenHeight - margin - buttonHeight - view.safeAreaInsets.bottom - bottomMargin // Вычитаем отступ снизу
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.alignment = .fill
+        stackView.distribution = .fillEqually
+        stackView.spacing = spacing
+        view.addSubview(stackView)
+        
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            stackView.topAnchor.constraint(equalTo: displayTextField.bottomAnchor, constant: 50),
+            stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: margin),
+            stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -margin),
+            stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20)
+        ])
         
         for row in buttonTitles {
+            let rowStackView = UIStackView()
+            rowStackView.axis = .horizontal
+            rowStackView.alignment = .fill
+            rowStackView.distribution = .fill
+            rowStackView.spacing = spacing
+            stackView.addArrangedSubview(rowStackView)
+            
             for title in row {
                 let button = UIButton(type: .system)
-                button.frame = CGRect(x: xPosition, y: yPosition, width: buttonWidth, height: buttonHeight)
                 button.setTitle(title, for: .normal)
                 button.titleLabel?.font = UIFont.systemFont(ofSize: 32)
                 button.backgroundColor = UIColor(red: 0.36, green: 0.36, blue: 0.36, alpha: 1.00)
                 button.setTitleColor(UIColor.white, for: .normal)
+                button.layer.borderWidth = 0.5 // Добавляем границу кнопке
+                button.layer.borderColor = UIColor.black.cgColor // Устанавливаем черный цвет границы
                 button.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
-                view.addSubview(button)
+                button.addTarget(self, action: #selector(buttonTouchDown(_:)), for: .touchDown)
+                button.addTarget(self, action: #selector(buttonTouchUpInside(_:)), for: .touchUpInside)
+                rowStackView.addArrangedSubview(button)
                 
-                // Устанавливаем цвет фона и текста для каждой кнопки с помощью switch
-                            switch title {
-                            case "C":
-                                button.backgroundColor = UIColor.systemOrange
-                                button.setTitleColor(UIColor.white, for: .normal)
-                            case "=", "+", "-", "×":
-                                button.backgroundColor = UIColor(red: 0.23, green: 0.23, blue: 0.23, alpha: 1.00)
-                                button.setTitleColor(UIColor.white, for: .normal)
-                            default:
-                                button.backgroundColor = UIColor(red: 0.36, green: 0.36, blue: 0.36, alpha: 1.00)
-                                button.setTitleColor(UIColor.white, for: .normal)
-                            }
+                switch title {
+                case "C":
+                    button.widthAnchor.constraint(equalTo: rowStackView.widthAnchor, multiplier: 0.75, constant: -spacing).isActive = true
+                    button.backgroundColor = UIColor.systemOrange
+                case "0":
+                    button.widthAnchor.constraint(equalTo: rowStackView.widthAnchor, multiplier: 0.5, constant: -spacing).isActive = true
+                default:
+                    button.widthAnchor.constraint(equalTo: rowStackView.widthAnchor, multiplier: 0.25, constant: -spacing).isActive = true
+                }
                 
-                xPosition += buttonWidth + spacing
+                if ["÷", "=", "+", "-", "×"].contains(title) {
+                    button.backgroundColor = UIColor(red: 0.23, green: 0.23, blue: 0.23, alpha: 1.00)
+                }
             }
-            xPosition = margin
-            yPosition -= buttonHeight + spacing
         }
     }
-    
 }
